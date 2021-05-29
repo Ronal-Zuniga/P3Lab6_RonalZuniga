@@ -9,7 +9,13 @@ FileSystemNode(_nombre, _autor, _padre){
 }
 
 string Directorio::toString(){
-	return this->nombre;
+	string result = this->nombre + "\n";
+	for(int i = 0; i < this->hijos.size(); i++){
+		result += "      ";
+		result += this->hijos[i]->getNombre();
+		result += "\n";
+	}
+	return result;
 }
 
 Directorio::~Directorio(){
@@ -19,4 +25,12 @@ Directorio::~Directorio(){
 		this->hijos.erase(hijos.begin()+i);
 	}
 	this->hijos.clear();
+}
+
+void Directorio::agregarArchivo(FileSystemNode* archivo){
+	this->hijos.push_back(archivo);
+}
+
+void Directorio::agregarDirectorio(FileSystemNode* directorio){
+	this->hijos.push_back(directorio);
 }

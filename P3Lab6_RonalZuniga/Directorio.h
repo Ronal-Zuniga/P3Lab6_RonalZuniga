@@ -11,7 +11,7 @@ class Directorio : public FileSystemNode{
 	public:
 		Directorio(string, string, FileSystemNode*);
 		~Directorio();
-		string toString();
+		virtual string toString();
 		void imprimirRecursivo(int);
 		void agregarArchivo(FileSystemNode*);
 		void agregarDirectorio(FileSystemNode*);

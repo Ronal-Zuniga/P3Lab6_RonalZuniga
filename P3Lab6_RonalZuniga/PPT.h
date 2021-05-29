@@ -11,7 +11,7 @@ class PPT : public Archivo{
 		bool animaciones;
 	public:
 		PPT(string, int, int, bool, string, string, FileSystemNode*);
-		string toString();
+		virtual string toString();
 };
 
 #endif

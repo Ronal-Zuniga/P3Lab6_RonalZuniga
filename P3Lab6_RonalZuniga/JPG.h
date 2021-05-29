@@ -11,7 +11,7 @@ class JPG : public Archivo{
 		double ancho;
 	public:
 		JPG(bool, string, double, double, string, string, FileSystemNode*);
-		string toString();
+		virtual string toString();
 };
 
 #endif

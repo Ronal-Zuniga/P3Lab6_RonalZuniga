@@ -6,6 +6,9 @@ FileSystem::FileSystem(Directorio* _root){
 
 FileSystem::~FileSystem(){
 	this->root->~Directorio();
-	delete this->root;
 	this->root = NULL;
+}
+
+Directorio* FileSystem::getRoot(){
+	return this->root;
 }

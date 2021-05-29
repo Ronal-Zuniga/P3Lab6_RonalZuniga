@@ -11,6 +11,7 @@ class FileSystemNode{
 	public:
 		virtual string toString() = 0;
 		FileSystemNode(string, string, FileSystemNode*);
+		string getNombre();
 };
 
 #endif

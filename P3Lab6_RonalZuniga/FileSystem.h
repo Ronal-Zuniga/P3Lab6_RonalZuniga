@@ -8,6 +8,7 @@ class FileSystem{
 	public:
 		FileSystem(Directorio*);
 		~FileSystem();
+		Directorio* getRoot();
 };
 
 #endif

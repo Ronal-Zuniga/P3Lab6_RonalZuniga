@@ -10,7 +10,7 @@ class CPP : public Archivo{
 		int numErrores;
 	public:
 		CPP(int, int, string, string, FileSystemNode*);
-		string toString();	
+		virtual string toString();	
 };
 
 #endif

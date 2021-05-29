@@ -7,3 +7,7 @@ FileSystemNode::FileSystemNode(string _nombre, string _autor, FileSystemNode* _p
 	this->autor = _autor;
 	this->padre = _padre;
 }
+
+string FileSystemNode::getNombre(){
+	return this->nombre;
+}
