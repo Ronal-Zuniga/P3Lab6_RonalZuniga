@@ -33,6 +33,9 @@ int main() {
 	while((opcion = menu()) != 5) {
 		switch(opcion) {
 			case 1: {
+				cout << endl;
+				root->getRoot()->imprimirRecursivo(1);
+				cout << endl;
 				break;
 			}
 
@@ -156,6 +159,13 @@ int main() {
 			}
 
 			case 4: {
+				cout << endl;
+				cout << "Buscar por nombre" << endl;
+				string nombre;
+				cout << "Ingrese el nombre a buscar: ";
+				getline(cin, nombre);
+				root->getRoot()->buscarPorNombre(nombre);
+				cout << endl;
 				break;
 			}
 		}//fin del switch
